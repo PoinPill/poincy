@@ -1,21 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Poincy - 増える仮想通貨 = 増える金</title>
-<meta name="viewport" content="width=device-width, user-scalable=no">
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-  </style>
-</head>
-<body>
-<h1 style="font-weight: lighter; margin-left: 10px;">P</h1>
-<div style="text-align: center">
-<button id="signinbtn">サインイン</button><br><br>
-<span><strong>Poincyで買い物をしよう！</strong></span><br>
-<span>Poincyは増える仮想通貨です。つまり、自分の財布に入っているお金が増える通貨です。</span>
-  <span style="position: fixed; bottom: 5px;">(c)2017 Poincy Inc</span>
-</div>
-</body>
+	<head>
+		<title>Poincy</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<style>
+			body {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="signselec">
+			<button onclick="snup()">新規登録</button>
+			<button onclick="snin()">サインイン</button>
+		</div>
+		<div id="signport" style="display: none;">
+			<input type="text" placeholder="ユーザーネーム"><br><br>
+			<input type="password" placeholder="パスワード"><br><br>
+			<button>登録</button>
+		</div>
+		<script>
+			function snup() {
+				document.getElementById("signport").style.display = "";
+				document.getElementById("signselec").style.display = "none";
+			}
+		</script>
+	</body>
 </html>
